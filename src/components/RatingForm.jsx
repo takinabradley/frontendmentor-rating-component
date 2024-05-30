@@ -1,4 +1,4 @@
-import style from "./RatingForm.module.css"
+import style from "./RatingForm.module.css";
 
 export default function RatingForm({
   onSubmit,
@@ -7,38 +7,72 @@ export default function RatingForm({
   errorMsg = null,
 }) {
   const onRadioButtonClick = (e) => {
-
-      e.target.checked = e.target.value === currentRating ? false : true
-      onRatingClick(e.target.value)
+    e.target.checked = e.target.value === currentRating ? false : true;
+    onRatingClick(e.target.value);
   };
 
   return (
     <form onSubmit={onSubmit} className={style["RatingForm"]}>
-      <div className={style["buttons"]} >
-        <label>
-          1
-          <input type="radio" name="rating" value={1} onClick={onRadioButtonClick} className="visually-hidden-always"/>
-        </label>
-        <label>
-          2
-          <input type="radio" name="rating" value={2} onClick={onRadioButtonClick} className="visually-hidden-always"/>
-        </label>
-        <label>
-          3
-          <input type="radio" name="rating" value={3} onClick={onRadioButtonClick} className="visually-hidden-always"/>
-        </label>
-        <label>
-          4
-          <input type="radio" name="rating" value={4} onClick={onRadioButtonClick} className="visually-hidden-always"/>
-        </label>
-        <label>
-          5
-          <input type="radio" name="rating" value={5} onClick={onRadioButtonClick} className="visually-hidden-always"/>
-        </label>
-      </div>
+      <fieldset>
+        <div className={style["buttons"]}>
+          <legend className="visually-hidden">Please select a rating (one through five)</legend>
+          <label>
+            1
+            <input
+              type="radio"
+              name="rating"
+              value={1}
+              onClick={onRadioButtonClick}
+              className="visually-hidden-always"
+            />
+          </label>
+          <label>
+            2
+            <input
+              type="radio"
+              name="rating"
+              value={2}
+              onClick={onRadioButtonClick}
+              className="visually-hidden-always"
+            />
+          </label>
+          <label>
+            3
+            <input
+              type="radio"
+              name="rating"
+              value={3}
+              onClick={onRadioButtonClick}
+              className="visually-hidden-always"
+            />
+          </label>
+          <label>
+            4
+            <input
+              type="radio"
+              name="rating"
+              value={4}
+              onClick={onRadioButtonClick}
+              className="visually-hidden-always"
+            />
+          </label>
+          <label>
+            5
+            <input
+              type="radio"
+              name="rating"
+              value={5}
+              onClick={onRadioButtonClick}
+              className="visually-hidden-always"
+            />
+          </label>
+        </div>
+      </fieldset>
 
       <div className={style["submitBtnContainer"]}>
-        <button type="submit" className={style["submitBtn"]}>submit</button>
+        <button type="submit" className={style["submitBtn"]}>
+          submit
+        </button>
       </div>
     </form>
   );
