@@ -1,0 +1,57 @@
+:root {
+  /* COLORS */
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --dark-blue-fog: hsl(213, 19%, 24%);
+
+  /* COLOR GUIDE */
+  --primary-accent: var(--orange);
+
+  --primary-background: var(--very-dark-blue);
+  --primary-foreground: var(--dark-blue);
+
+  --primary-button-background: var(--dark-blue-fog);
+  --accent-button-background: var(--primary-accent);
+
+  --heading-text: var(--white);
+  --primary-text: var(--light-grey);
+  --dark-text: var(--very-dark-blue);
+
+  /* TEXT GUIDE*/
+  --fs-500: 15px;
+
+  --fw-400: 400;
+  --fw-700: 700;  
+}
+
+body {
+  margin: 0;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(100%); 
+  height: 1px; 
+  overflow: hidden; 
+  position: absolute; 
+  white-space: nowrap; 
+  width: 1px; 
+}
+
+.visually-hidden-always {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(100%); 
+  height: 1px; 
+  overflow: hidden; 
+  position: absolute; 
+  white-space: nowrap; 
+  width: 1px; 
+}
+
+@font-face {
+  font-family: "Overpass";
+  src: url(./assets/fonts/Overpass-VariableFont_wght.ttf) format("truetype");
+}

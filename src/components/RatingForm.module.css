@@ -1,0 +1,59 @@
+.RatingForm {
+  color: var(--primary-text);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.RatingForm .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.RatingForm label {
+  display: inline-block;
+  padding: 1em;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  background-color: var(--dark-blue-fog);
+  color: var(--primary-text);
+  font-weight: var(--fw-700);
+  border-radius: 2em;
+  font-weight: var(--fw-700);
+}
+
+.RatingForm label:has(:focus, :hover, :checked, :active) {
+  color: var(--dark-text);
+}
+
+
+
+.RatingForm label:has(:focus, :hover) {
+  background-color: var(--primary-accent);
+  outline: .25em solid var(--primary-accent);
+}
+
+.RatingForm label:has(:checked, :active) {
+  background-color: var(--white);
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 1em;
+  border-radius: 20px;
+  background-color: var(--primary-accent);
+  border: none;
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+  font-family: "Overpass";
+  letter-spacing: .1em;
+}
+
+.submitBtn:focus, .submitBtn:active, .submitBtn:hover {
+  background-color: var(--white);
+  outline: .25em solid var(--white)
+}
+

@@ -1,0 +1,42 @@
+.App {
+  background-color: var(--primary-background);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.starIcon {
+  width: 1em;
+  padding: 1em;
+  background-color: var(--dark-blue-fog);
+  border-radius: 2em;
+  margin-bottom: 1em;
+}
+
+.App h1 {
+  color: var(--heading-text);
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 1em;
+  background-color: var(--primary-foreground);
+  border-radius: 20px;
+  min-width: 200px;
+  max-width: 300px;
+
+  font-family: "Overpass";
+  color: var(--primary-text);
+}

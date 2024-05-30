@@ -1,0 +1,21 @@
+.RatingFormThankYou {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: var(--fs-500);
+  gap: .5em;
+}
+
+.ratingMsg {
+  padding: .5em 1em;
+  background-color: var(--dark-blue-fog);
+  color: var(--primary-accent);
+  font-weight: var(--fw-700);
+  border-radius: 20px;
+}
+
+.RatingFormThankYou h1 {
+  color: var(--white);
+}
