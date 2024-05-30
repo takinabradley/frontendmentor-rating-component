@@ -33,7 +33,7 @@ function App() {
     <div className={styles["App"]}>
       <main className={styles["main"]}>
 
-      <div className={styles["card"]} >
+      <div className={styles["card"]} aria-live="polite" >
           {submitted ? <RatingFormThankYou rating={rating} /> : requestRatingMessage }
 
           {submitted ? 
